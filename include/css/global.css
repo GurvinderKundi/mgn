@@ -1,0 +1,82 @@
+/* 
+Import the "printstyle.css" style sheet ONLY if the media is print:
+
+@import "printstyle.css" print; 
+
+Import the "mobstyle.css" style sheet ONLY if the media is screen and the viewport is maximum 768 pixels:
+
+@import "mobstyle.css" screen and (max-width: 768px);
+
+*/
+
+@import url("https://fonts.googleapis.com/css2?family=League+Gothic&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+
+@import url("uclasses.css");
+
+:root {
+    --body-bgcolor: #f8f5ef;
+    --footer-bgcolor: #08212c;
+    --font-color: #08212c;
+}
+
+body {
+    max-inline-size: 90%;
+    margin-inline: auto;
+    background-color: var(--body-bgcolor);
+
+    font-family: "Roboto", sans-serif;
+    font-size: 19px;
+    color: var(--font-color);
+    line-height: 1.58;
+
+    /* font-optical-sizing: auto;
+    font-weight: 300;
+    font-style: normal;
+    font-variation-settings: "wdth" 100; */
+}
+
+.main-nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-inline: 1em;
+}
+
+.main-nav ul {
+    display: flex;
+    list-style-type: none;
+    align-items: center;
+    column-gap: 2vw;
+    padding-inline-end: 4em;
+    border: 1px solid red;
+}
+
+.wrapper {
+    max-inline-size: 90rem;
+    margin-inline: auto;
+    text-align: center;
+    /* border: 1px solid red; */
+}
+
+.btn {
+    background-color: #38cfd9;
+    color: black;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 1.3em;
+    padding: 0.8em 1.6em;
+    border-radius: 50px;
+    max-inline-size: 300px;
+    text-align: center;
+}
+
+.btn:hover,
+.btn:focus {
+    opacity: 0.75;
+}
+
+footer {
+    background-color: var(--footer-bgcolor);
+    color: #fff;
+    padding: 1em;
+}

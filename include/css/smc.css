@@ -1,0 +1,53 @@
+:root {
+    --grid-min-col-size: 150px;
+}
+
+.faculty-grid {
+    display: grid;
+    justify-content: center;
+    gap: 3rem;
+
+    /* Breakpoint-Free CSS Grid Layouts  https://www.youtube.com/watch?v=bj0Z_GncIwY   */
+    /* Always start with auto-fit is 95% correct then as per situation change to auto-fill */
+    /*  grid-template-columns: repeat(auto-fit, 1fr) would make one column and take entire available width*/
+    /* auto-fill fills empty columns  */
+    /* auto-fit fits occupies the empty space and enlarge grid items to fit */
+    grid-template-columns: repeat(
+        auto-fit,
+        minmax(min(var(--grid-min-col-size), 100%), 1fr)
+    );
+
+    /* background-color: brown;
+    border: 2px solid black; */
+}
+
+.faculty-person {
+    cursor: pointer;
+}
+
+.faculty-person img {
+    /* Image dimension 250px x 320px  Size 35.5kb */
+
+    /* https://css-tricks.com/almanac/properties/c/clip-path/ */
+    /* https://bennettfeely.com/clippy/ */
+    /* clip-path: ellipse(width height at Move left Move down);  clip-path: circle(50%);    clip-path: circle(30px at 35px 35px); clip-path: circle(50% at 50% 50%);*/
+    clip-path: ellipse(50% 50% at 50% 50%);
+}
+
+.faculty-grid img {
+    border-radius: 20px 50px 20px 50px;
+}
+
+.faculty-person:hover,
+.faculty-person:focus {
+    /* box-shadow: 0 0 2px 1px rgba(0, 140, 186, 0.5); */
+
+    /* Change the color of all images to black and white (100% gray): */
+    -webkit-filter: grayscale(100%); /* Safari 6.0 - 9.0 */
+    filter: grayscale(100%);
+}
+
+.faculty-person p {
+    font-size: 0.9rem;
+    text-align: center;
+}

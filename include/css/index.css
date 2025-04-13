@@ -1,0 +1,60 @@
+img {
+    margin-inline: auto;
+    /* border-radius: 1rem; */
+}
+
+/* .hero img {
+    mask: url(https://assets.codepen.io/1101822/circles-mask-whole.svg)
+        no-repeat center;
+
+    max-width: 100%;
+    display: block;
+    aspect-ratio: 1;
+    object-fit: cover;
+} */
+
+/*  */
+.mask-border-top-bottom {
+    /* mask: linear-gradient(0, #0000 30px, #000 0) 0 15px,
+        radial-gradient(15px, #000 calc(100% - 1px), #0000) 50%/27.75px 30px
+            repeat space; */
+
+    mask: repeating-conic-gradient(
+            from 135deg at 50% 8px,
+            #0000 0,
+            #000 1deg 89deg,
+            #0000 90deg 180deg
+        )
+        50% -8px/16px;
+
+    /* mask-image: linear-gradient(red, blue);
+    mask-image: linear-gradient(black, transparent); */
+}
+
+/* Spice up your site | Easy waves, angles, & other creative shapes with CSS  https://www.youtube.com/watch?v=hWGgw1K-i8Y */
+.facilities {
+    --skew-angle: -3.5deg;
+    position: relative;
+    /* isolation: isolate; */
+}
+
+.facilities::after {
+    content: "";
+    position: absolute;
+    background-image: linear-gradient(45deg, #12c2e9, #c471ed, #f64f59);
+    inset: 0;
+    transform: skewY(var(--skew-angle));
+    z-index: -1;
+    /* width: 100vw; */
+}
+
+.flex--row {
+    display: flex;
+    gap: 1em;
+}
+
+.flex--col {
+    /* background-color: lightblue; */
+    padding: 1em;
+    margin-block: 1em;
+}
