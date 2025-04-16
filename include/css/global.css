@@ -20,6 +20,7 @@ Import the "mobstyle.css" style sheet ONLY if the media is screen and the viewpo
 }
 
 body {
+    margin-block-start: 1rem;
     max-inline-size: 90%;
     margin-inline: auto;
     background-color: var(--body-bgcolor);
@@ -35,20 +36,17 @@ body {
     font-variation-settings: "wdth" 100; */
 }
 
-.main-nav {
+.fcontainer {
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    justify-content: flex-start;
     padding-inline: 1em;
 }
 
 .main-nav ul {
-    display: flex;
     list-style-type: none;
-    align-items: center;
     column-gap: 2vw;
-    padding-inline-end: 4em;
-    border: 1px solid red;
+    /* border: 1px solid red; */
 }
 
 .wrapper {

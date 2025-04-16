@@ -7,7 +7,7 @@ Logo fill round color #352d74  rgba(53, 45, 116, 1)*/
 }
 
 h2 {
-    margin-block-end: 2rem;
+    margin-block: 1rem;
 
     @media (width <= 700px) {
         font-weight: 400;
@@ -67,7 +67,7 @@ h2 {
 /*  }     */
 
 .faculty-person img {
-    border-radius: 20px 50px 20px 50px;
+    border-radius: 20px 50px 30px 50px;
     margin-inline: auto;
     padding-block-end: 0.8rem;
 }

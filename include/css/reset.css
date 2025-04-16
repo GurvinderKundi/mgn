@@ -68,18 +68,20 @@ h4 {
 }
 
 /* Make images easier to work with used by Kevin Powell */
-img,
+/* img,
 picture {
     max-inline-size: 100%;
     display: block;
-}
+} */
 
 /* Make images easier to work with used by Kevin Powell
 A better image reset for your CSS
  https://www.youtube.com/watch?v=345V2MU3E_w 
  */
-img {
-    max-width: 100%;
+img,
+picture {
+    margin-inline: auto;
+    max-inline-size: 100%;
     height: auto;
     vertical-align: middle;
     font-style: italic;
