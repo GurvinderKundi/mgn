@@ -68,6 +68,7 @@
     --skew-angle: -3.5deg;
     position: relative;
     /* isolation: isolate; */
+    padding: 2rem;
 }
 
 .facilities::after {
@@ -84,7 +85,7 @@
 /* Diagonal Background   END  | Easy waves, angles, & other creative shapes with CSS  https://www.youtube.com/watch?v=hWGgw1K-i8Y */
 /* *************************************************************************** */
 
-.facilitiesfc {
+/* .facilitiesfc {
     flex-flow: row wrap;
     justify-content: center;
     align-items: start;
@@ -93,6 +94,21 @@
 .facilitiesfi {
     padding: 2em;
     margin-block: 1em;
+}
+
+.facilities p {
+    max-width: 400px;
+    text-align: center;
+} */
+
+.facilities {
+    grid-auto-flow: column;
+    grid-auto-columns: 1fr;
+    gap: 1rem;
+
+    @media (width <= 700px) {
+        grid-auto-flow: row;
+    }
 }
 
 /***************************************** SVG image mask  START ********************* */
