@@ -74,6 +74,8 @@ h2 {
 .faculty-person img {
     border-radius: 0 50px 20px 50px;
     margin-inline: auto;
+    outline: 2px solid #333;
+    outline-offset: -1px;
 }
 
 .faculty-person:hover,
