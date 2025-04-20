@@ -31,7 +31,7 @@ h2 {
 
 .headsfi {
     justify-items: center;
-    /* align-content: flex-start; */
+    align-self: flex-start;
     flex-basis: 250px;
 }
 
