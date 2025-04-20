@@ -2,6 +2,10 @@
 /*  https://css-generators.com/custom-borders/  */
 /*************************************************************************/
 
+.hero {
+    height: 100vh;
+}
+
 .mask-border-top-bottom {
     /* mask: linear-gradient(0, #0000 30px, #000 0) 0 15px,
         radial-gradient(15px, #000 calc(100% - 1px), #0000) 50%/27.75px 30px
