@@ -126,3 +126,42 @@
 } */
 
 /***************************************** SVG image mask  END ********************* */
+
+/***************************************** Infrastructure Grid START ********************* */
+/* Learn CSS Grid the easy way https://www.youtube.com/watch?v=rg7Fvvl3taU */
+
+.infragc {
+    outline: 2px solid black;
+
+    gap: 1.5rem;
+}
+
+.infragi {
+    outline: 1px solid red;
+}
+
+.infragi:nth-child(3) {
+    background-color: lightgreen;
+}
+
+@media (min-width: 50em) {
+    .grid-col-span-2 {
+        grid-column: span 2;
+    }
+
+    .infragc {
+        grid-template-columns: repeat(4, 1fr);
+    }
+
+    .infragi:last-child {
+        background-color: pink;
+        grid-column-start: 4;
+        /* grid-row-start: 1; */
+        /* grid-row-end: span 2;  This can also be written as below i.e grid-row-end: 3; */
+        /* grid-row-end: 3; */
+        /* short hand for start and end or  grid-row: 1 / 3 */
+        grid-row: 1 / span 2;
+    }
+}
+
+/***************************************** Infrastructure Grid END ********************* */
