@@ -36,23 +36,24 @@ body {
     font-variation-settings: "wdth" 100; */
 }
 
-.fcontainer {
-    display: flex;
-    align-items: center;
-    justify-content: flex-start;
-    padding-inline: 1em;
-}
-
-.main-nav ul {
-    list-style-type: none;
-    column-gap: 2vw;
-    /* border: 1px solid red; */
-}
-
-.wrapper {
+.w {
     max-inline-size: 90rem;
     margin-inline: auto;
     text-align: center;
+    /* border: 1px solid red; */
+}
+
+.fc {
+    display: flex;
+}
+
+.gc {
+    display: grid;
+}
+
+.mn ul {
+    list-style-type: none;
+    column-gap: 2vw;
     /* border: 1px solid red; */
 }
 

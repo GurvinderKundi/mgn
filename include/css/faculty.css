@@ -3,7 +3,7 @@ Logo fill round color #352d74  rgba(53, 45, 116, 1)*/
 
 :root {
     --grid-min-col-size: 150px;
-    --flex-grid-gap: 2rem;
+    --fc-gc-gap: 2rem;
 }
 
 h2 {
@@ -16,30 +16,29 @@ h2 {
     }
 }
 
-.flex-container {
-    display: flex;
+.headsfc {
     /* flex-direction: row;
     flex-wrap: wrap; */
     /* above properties can also be combined in flex-flow */
     flex-flow: row wrap;
     justify-content: center;
 
-    /* As Flex wrap is set to wrap, so we should use align-content instead of align-item */
-    align-content: flex-start;
-    gap: var(--flex-grid-gap);
+    /* As Flex wrap is set to wrap, so we should use align-content instead of align-items. 
+    As we do not have multiple lines in the start , we used align-items */
+    align-items: flex-start;
+    gap: var(--fc-gc-gap);
 }
 
-.flex-items {
+.headsfi {
     justify-items: center;
     /* align-content: flex-start; */
     flex-basis: 250px;
 }
 
-.grid-container {
-    display: grid;
+.teamgc {
     justify-content: center;
     align-items: start;
-    gap: var(--flex-grid-gap);
+    gap: var(--fc-gc-gap);
 
     /* Breakpoint-Free CSS Grid Layouts  https://www.youtube.com/watch?v=bj0Z_GncIwY   */
     /* Always start with auto-fit is 95% correct then as per situation change to auto-fill */
@@ -52,7 +51,7 @@ h2 {
     );
 }
 
-.grid-items {
+.teamgi {
     justify-items: center;
     align-content: start;
 }
@@ -73,9 +72,8 @@ h2 {
 /*  }     */
 
 .faculty-person img {
-    border-radius: 0 50px 35px 50px;
+    border-radius: 0 50px 20px 50px;
     margin-inline: auto;
-    padding-block-end: 0.8rem;
 }
 
 .faculty-person:hover,
@@ -87,10 +85,13 @@ h2 {
     filter: grayscale(100%);
 }
 
+/* check this link for hoe to put figcaption on top of image
+ https://www.w3.org/Style/Examples/007/figures.en.html */
+
 figcaption {
     font-size: 0.9rem;
     text-align: center;
-    caption-side: top;
+    padding-block-start: 0.8rem;
 }
 
 /**********************************************************************************************
@@ -110,6 +111,10 @@ h1 svg text {
     stroke-width: 2;
     stroke: #365fa0;
     font-size: 55px;
+
+    @media (width <= 700px) {
+        font-size: 48px;
+    }
 }
 @keyframes stroke {
     0% {
