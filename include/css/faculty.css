@@ -60,6 +60,7 @@ h2 {
 .faculty-person {
     cursor: pointer;
     text-align: center;
+    /* border: 1px solid red; */
 }
 
 /*.faculty-person img {      */
