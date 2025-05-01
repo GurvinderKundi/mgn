@@ -1,3 +1,121 @@
+/******************  HERO COLLAGE  START *********************************/
+
+.hero_collage {
+    /* margin-block: 1rem; */
+    gap: 1rem;
+    /* the below setting is very important */
+    grid-auto-columns: 1fr;
+    grid-template-areas:
+        "one"
+        "two"
+        "three"
+        "four"
+        "five"
+        "six"
+        "seven"
+        "eight"
+        "nine"
+        "ten";
+}
+
+.hero_collage_gi {
+    outline: 1px solid red;
+    outline-offset: -10px;
+    border-radius: 20px;
+    padding: 12px;
+}
+
+.hero_collage_gi:first-child {
+    grid-area: one;
+}
+.hero_collage_gi:nth-child(2) {
+    grid-area: two;
+}
+.hero_collage_gi:nth-child(3) {
+    grid-area: three;
+}
+.hero_collage_gi:nth-child(4) {
+    grid-area: four;
+}
+.hero_collage_gi:nth-child(5) {
+    grid-area: five;
+}
+.hero_collage_gi:nth-child(6) {
+    grid-area: six;
+}
+.hero_collage_gi:nth-child(7) {
+    grid-area: seven;
+}
+.hero_collage_gi:nth-child(8) {
+    grid-area: eight;
+}
+.hero_collage_gi:nth-child(9) {
+    grid-area: nine;
+}
+.hero_collage_gi:last-child {
+    grid-area: ten;
+}
+
+@media screen and (min-width: 33em) {
+    .hero_collage {
+        grid-template-areas:
+            "one one"
+            "two three"
+            "four six"
+            "five seven"
+            "eight nine"
+            "ten ten";
+    }
+}
+
+@media screen and (min-width: 38em) {
+    .hero_collage {
+        grid-template-areas:
+            "one one"
+            "two three"
+            "four six"
+            "five seven"
+            "eight nine"
+            "ten ten";
+    }
+}
+
+@media screen and (min-width: 54em) {
+    .hero_collage {
+        grid-template-areas:
+            "one one one"
+            "two three six"
+            "four five seven"
+            "eight eight nine"
+            "ten ten ten";
+    }
+}
+
+@media screen and (min-width: 75em) {
+    .hero_collage {
+        grid-template-areas:
+            "one one one one"
+            "three four five six"
+            "seven eight eight nine"
+            "two ten ten ten";
+    }
+}
+
+.video_container {
+    /* max-width: 800px; */
+    margin-inline: auto;
+    padding: 100px 0 0; /* 1:1 Aspect Ratio */
+}
+
+.responsive-iframe {
+    width: 100%;
+    height: 0;
+    border: none;
+    padding-block-end: 56.25%;
+}
+
+/******************  HERO COLLAGE  END ***********************************/
+
 /******************  MASK BORDERS  START *********************************/
 /*  https://css-generators.com/custom-borders/  */
 /*************************************************************************/

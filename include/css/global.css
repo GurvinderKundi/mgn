@@ -36,8 +36,21 @@ body {
     font-variation-settings: "wdth" 100; */
 }
 
+header {
+    justify-content: space-between;
+    align-items: center;
+}
+
+.mn ul {
+    padding-inline: 12px;
+    list-style-type: none;
+    column-gap: 2vw;
+    /* justify-items: center; */
+    border: 1px solid red;
+}
+
 .w {
-    max-inline-size: 90rem;
+    max-inline-size: 100rem;
     margin-inline: auto;
     text-align: center;
     /* border: 1px solid red; */
@@ -49,12 +62,6 @@ body {
 
 .gc {
     display: grid;
-}
-
-.mn ul {
-    list-style-type: none;
-    column-gap: 2vw;
-    /* border: 1px solid red; */
 }
 
 .btn {

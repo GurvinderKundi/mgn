@@ -49,6 +49,8 @@ h2 {
         auto-fit,
         minmax(min(var(--grid-min-col-size), 100%), 1fr)
     );
+
+    place-content: center;
 }
 
 .teamgi {
