@@ -36,12 +36,12 @@ body {
     font-variation-settings: "wdth" 100; */
 }
 
-header {
+.mn {
     justify-content: space-between;
     align-items: center;
 }
 
-.mn ul {
+.nav__list {
     padding-inline: 12px;
     list-style-type: none;
     column-gap: 2vw;
