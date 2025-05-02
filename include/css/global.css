@@ -37,22 +37,22 @@ body {
 }
 
 .main-nav {
-    border: 1px solid red;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    align-items: center;
 }
 
 .nav__list {
     list-style-type: none;
     display: flex;
+    flex-flow: row wrap;
     column-gap: 2rem;
     padding-inline: 12px;
 }
 
 .nav__link {
-    border: 1px solid red;
-}
-
-.social__icon {
-    margin-left: auto;
+    border: 1px solid black;
 }
 
 .w {
