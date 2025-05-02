@@ -36,24 +36,29 @@ body {
     font-variation-settings: "wdth" 100; */
 }
 
-.mn {
-    justify-content: space-between;
-    align-items: center;
-}
-
-.nav__list {
-    padding-inline: 12px;
-    list-style-type: none;
-    column-gap: 2vw;
-    /* justify-items: center; */
+.main-nav {
     border: 1px solid red;
 }
 
+.nav__list {
+    list-style-type: none;
+    display: flex;
+    column-gap: 2rem;
+    padding-inline: 12px;
+}
+
+.nav__link {
+    border: 1px solid red;
+}
+
+.social__icon {
+    margin-left: auto;
+}
+
 .w {
-    max-inline-size: 100rem;
+    max-inline-size: 90rem;
     margin-inline: auto;
     text-align: center;
-    /* border: 1px solid red; */
 }
 
 .fc {
