@@ -36,6 +36,10 @@ body {
     font-variation-settings: "wdth" 100; */
 }
 
+.display-none {
+    display: none;
+}
+
 .main-nav {
     display: flex;
     flex-flow: row wrap;

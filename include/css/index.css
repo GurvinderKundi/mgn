@@ -2,11 +2,16 @@
 
 .logo {
     align-self: center;
+    border: 1px solid red;
+    @media (width < 50em) {
+        flex-grow: 1;
+        justify-self: center;
+    }
 }
 
-.logo img {
+/* .logo img {
     min-width: 140px;
-}
+} */
 
 .hero_collage {
     /* margin-block: 1rem; */
