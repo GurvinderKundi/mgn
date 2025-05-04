@@ -131,6 +131,19 @@
     padding-block-end: 56.25%;
 }
 
+/* 
+How to set a maximum number of lines of text with CSS     
+https://www.youtube.com/watch?v=b6iVByCOx8A 
+*/
+
+.line_clamp {
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    line-clamp: 3;
+    -webkit-line-clamp: 3;
+    overflow: hidden;
+}
+
 /******************  HERO COLLAGE  END ***********************************/
 
 /******************  MASK BORDERS  START *********************************/
