@@ -17,12 +17,26 @@
          MGN IMPORT Roboto GOOGLE FONT START
 =====================================================================================================================
         -->
+
+        <!-- 8 font families selected 
+        Roboto              font-family: "Roboto", sans-serif;          Italic: 0   Width: 100    Weight: 100   3 Style
+        League Gothic       font-family: "League Gothic", sans-serif;   Italic: 0   Width: 100    Weight: 400   3 Style
+        Poly                font-family: "Poly", serif;                 Regular 400     Regular 400 Italic      2 Style
+        Poppins             font-family: "Poppins", sans-serif;                                                 18 styles
+        Lato                font-family: "Lato", sans-serif;                                                    10 styles
+        Playfair Display    font-family: "Playfair Display", serif;     Italic: 0   Weight: 400 – 900           2 Style                                              
+        Open Sans           font-family: "Open Sans", sans-serif;       Italic: 0   Width: 100   Weight: 300 – 800
+        Tuffy               font-family: "Tuffy", sans-serif;           Regular 400     Bold 700    Regular 400 Italic  Bold 700 Italic
+
+        -->
+
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
         <link
-            href="https://fonts.googleapis.com/css2?family=League+Gothic&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+            href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=League+Gothic&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Poly:ital@0;1&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Tuffy:ital,wght@0,400;0,700;1,400;1,700&display=swap"
             rel="stylesheet"
         />
+
         <!-- 
 =====================================================================================================================
          MGN IMPORT GOOGLE FONT END
@@ -89,41 +103,63 @@
         -->
         <header class="w">
             <!-- mn main-nav main navigation -->
-            <nav class="main-nav">
-                <div class="logo">
-                    <a href="index.html"
-                        ><img
-                            src="include/img/logo/mgn-Logo-small-140x124.png"
-                            alt="Logo MGN - Montgomery Guru Nanak Public School Adarsh Nagar Jalandhar"
-                    /></a>
+            <!-- navbar > main-navbar -->
+            <nav class="main-navbar">
+                <div class="main-navbar-container">
+                    <div>
+                        <a href="index.html" class="main-navbar-logo"
+                            >M.G.N
+                            <!-- <img
+                                src="include/img/logo/mgn-Logo-small-140x124.png"
+                                alt="Logo MGN - Montgomery Guru Nanak Public School Adarsh Nagar Jalandhar"
+                            /> -->
+                        </a>
+                    </div>
+                    <button class="main-navbar-toggle">
+                        <span class="bar"></span>
+                        <span class="bar"></span>
+                        <span class="bar"></span>
+                    </button>
+                    <ul class="main-navbar-menu">
+                        <li class="main-navbar-menu-link">
+                            <a href="#">About</a>
+                        </li>
+                        <li class="main-navbar-menu-link">
+                            <a href="include/html/smc.html">SMC</a>
+                        </li>
+                        <li class="main-navbar-menu-link">
+                            <a href="include/html/faculty.html">Faculty</a>
+                        </li>
+                        <li class="main-navbar-menu-link">
+                            <a href="#">Academics</a>
+                        </li>
+                        <li class="main-navbar-menu-link">
+                            <a href="#">Transport</a>
+                        </li>
+                        <li class="main-navbar-menu-link">
+                            <a href="#">Admission</a>
+                        </li>
+                        <li class="main-navbar-menu-link">
+                            <a href="#">Gallery</a>
+                        </li>
+                        <li class="main-navbar-menu-link">
+                            <a href="#">More</a>
+                        </li>
+                        <li class="main-navbar-menu-link">
+                            <a class="nav__a--button" href="#">CONTACT</a>
+                        </li>
+                    </ul>
+                    <!-- Navigation links for Social Icons -->
+                    <!-- <ul class="nav__list">
+                        <li class="nav__link social__icon">Facebook</li>
+                        <li class="nav__link">
+                            <a href="include/html/smc.html">Instagram</a>
+                        </li>
+                        <li class="nav__link">
+                            <a href="include/html/faculty.html">Youtube</a>
+                        </li>
+                    </ul> -->
                 </div>
-                <ul class="nav__list">
-                    <li class="nav__link">About</li>
-                    <li class="nav__link">
-                        <a href="include/html/smc.html">SMC</a>
-                    </li>
-                    <li class="nav__link">
-                        <a href="include/html/faculty.html">Faculty</a>
-                    </li>
-                    <li class="nav__link">Academics</li>
-                    <li class="nav__link">Transport</li>
-                    <li class="nav__link">Admission</li>
-                    <li class="nav__link">Gallery</li>
-                    <li class="nav__link">More</li>
-                    <li class="nav__link">
-                        <a class="nav__a--button" href="#"></a>CONTACT
-                    </li>
-                </ul>
-                <!-- Navigation links for Social Icons -->
-                <ul class="nav__list">
-                    <li class="nav__link social__icon">Facebook</li>
-                    <li class="nav__link">
-                        <a href="include/html/smc.html">Instagram</a>
-                    </li>
-                    <li class="nav__link">
-                        <a href="include/html/faculty.html">Youtube</a>
-                    </li>
-                </ul>
             </nav>
         </header>
         <!-- 
@@ -282,8 +318,8 @@
                         </video> -->
                         <div>
                             <iframe
-                                width="400"
-                                height="300"
+                                width="350"
+                                height="270"
                                 src="https://www.youtube.com/embed/UaOwdzuuKlE"
                                 title="Latest Update of School infrastructure"
                                 frameborder="0"
@@ -495,4 +531,5 @@
 ===============================================================================================================================
              -->
     </body>
+    <script src="script.js"></script>
 </html>
