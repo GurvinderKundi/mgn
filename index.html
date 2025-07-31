@@ -1,535 +1,729 @@
 <!DOCTYPE html>
-<html lang="en">
+<html
+    lang="en"
+    id="student-portal"
+    class="__variable_f7efbd light"
+    style="color-scheme: light"
+>
     <head>
         <meta charset="UTF-8" />
+        <!-- <meta name="viewport" content="width=device-width, initial-scale=1.0" /> -->
+        <!-- viewport meta to render pages on mobile properly -->
         <meta
             name="viewport"
             content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"
         />
-        <title>Home | MGN Public School</title>
+        <title>MGN Public School Adarsh Nagar</title>
 
+        <meta name="department" content="School Education and Literacy" />
         <meta
             name="description"
-            content="MGN Public School, Adarsh Nagar, Jalandhar is a General education school in Jalandhar, Punjab. MGN Public school is being run by Montgomery Guru Nanak Educational Trust which was founded in 1922, at Montgomery (now in Pakistan)"
+            content="Montgomery Guru Nanak (MGN) Public School is one of the most prestigious educational institution which was established in the year 1974 by Montgomery Guru Nanak Educational Trust. It is located at Adarsh Nagar, Jalandhar, Punjab, INDIA Pin-144008"
         />
-        <!-- 
-=====================================================================================================================
-         MGN IMPORT Roboto GOOGLE FONT START
-=====================================================================================================================
-        -->
+        <meta name="author" content="Gurvinder Pal Singh" />
+        <meta name="doc_status" content="final" />
 
-        <!-- 8 font families selected 
-        Roboto              font-family: "Roboto", sans-serif;          Italic: 0   Width: 100    Weight: 100   3 Style
-        League Gothic       font-family: "League Gothic", sans-serif;   Italic: 0   Width: 100    Weight: 400   3 Style
-        Poly                font-family: "Poly", serif;                 Regular 400     Regular 400 Italic      2 Style
-        Poppins             font-family: "Poppins", sans-serif;                                                 18 styles
-        Lato                font-family: "Lato", sans-serif;                                                    10 styles
-        Playfair Display    font-family: "Playfair Display", serif;     Italic: 0   Weight: 400 – 900           2 Style                                              
-        Open Sans           font-family: "Open Sans", sans-serif;       Italic: 0   Width: 100   Weight: 300 – 800
-        Tuffy               font-family: "Tuffy", sans-serif;           Regular 400     Bold 700    Regular 400 Italic  Bold 700 Italic
+        <!-- Link to ICON Phosphor https://phosphoricons.com/    -->
+        <!-- All you need to do is add the stylesheet for each weight you need to the document <head>, and drop in icons with an <i/> tag and the appropriate class: -->
+        <!-- below are read me -->
+        <!-- https://github.com/phosphor-icons/homepage#phosphor-icons -->
+        <!-- https://github.com/phosphor-icons/web  -->
 
-        -->
+        <!-- regular -->
+        <!-- <i class="ph ph-smiley"></i> -->
+        <link
+            rel="stylesheet"
+            type="text/css"
+            href="https://cdn.jsdelivr.net/npm/@phosphor-icons/web@2.1.1/src/regular/style.css"
+        />
+        <!-- fill -->
+        <!-- <i class="ph-fill ph-heart" style="color: hotpink"></i> -->
+        <link
+            rel="stylesheet"
+            type="text/css"
+            href="https://cdn.jsdelivr.net/npm/@phosphor-icons/web@2.1.1/src/fill/style.css"
+        />
+        <!-- bold -->
+        <!-- <i class="ph-bold ph-smiley"></i> -->
+        <link
+            rel="stylesheet"
+            type="text/css"
+            href="https://cdn.jsdelivr.net/npm/@phosphor-icons/web@2.1.2/src/bold/style.css"
+        />
+        <!-- duo-tone -->
+        <!-- <i class="ph-duotone ph-baseball"></i> -->
+        <link
+            rel="stylesheet"
+            type="text/css"
+            href="https://cdn.jsdelivr.net/npm/@phosphor-icons/web@2.1.2/src/duotone/style.css"
+        />
+
+        <!-- Using All Weights
+        If you intend to use all 6 weights, they can be made available by including the library as a script tag, using the base URL: -->
+        <!--  <i class="ph-light ph-address-book"></i>
+              <i class="ph ph-sunglasses"></i> -->
+
+        <script src="https://cdn.jsdelivr.net/npm/@phosphor-icons/web@2.1.2"></script>
+
+        <!-- link to Montserrat and Josefin Slab google fonts -->
 
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
         <link
-            href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=League+Gothic&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Poly:ital@0;1&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Tuffy:ital,wght@0,400;0,700;1,400;1,700&display=swap"
+            href="https://fonts.googleapis.com/css2?family=Josefin+Slab:ital,wght@0,100..700;1,100..700&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
             rel="stylesheet"
         />
 
-        <!-- 
-=====================================================================================================================
-         MGN IMPORT GOOGLE FONT END
-=====================================================================================================================
-        -->
-
-        <!-- 
-=====================================================================================================================
-         MGN FAVICON START
-=====================================================================================================================
-        -->
-        <link
-            rel="icon"
-            type="image/png"
-            href="include/favicon/favicon-96x96.png"
-            sizes="96x96"
-        />
-        <link
-            rel="icon"
-            type="image/svg+xml"
-            href="include/favicon/favicon.svg"
-        />
-        <link rel="shortcut icon" href="include/favicon/favicon.ico" />
-        <link
-            rel="apple-touch-icon"
-            sizes="180x180"
-            href="include/favicon/apple-touch-icon.png"
-        />
-        <link rel="manifest" href="include/favicon/site.webmanifest" />
-        <!-- 
-=====================================================================================================================
-         MGN FAVICON END
-=====================================================================================================================
-        -->
-
-        <!-- 
-=====================================================================================================================
-         MGN CSS STYLE SHEET START
-=====================================================================================================================
-    -->
-
-        <!-- Link to reset Style Sheet -->
-        <link rel="stylesheet" href="include/css/reset.css" />
-        <!-- Link to Global Style Sheet -->
-        <link rel="stylesheet" href="include/css/global.css" />
-        <!-- Link to index Style Sheet -->
-        <link rel="stylesheet" href="include/css/index.css" />
-        <!-- Link to BENTO GRID Style Sheet -->
-        <link rel="stylesheet" href="include/css/bentogrid.css" />
-
-        <!-- link to Print Style Sheet -->
-        <link rel="stylesheet" href="include/css/print.css" />
-        <!-- 
-=====================================================================================================================
-         MGN CSS STYLE SHEET END
-=====================================================================================================================
-        -->
+        <!-- link to reset, general, index  CSS -->
+        <!-- <link href="include/css/reset.css" rel="stylesheet" />
+        <link href="css/general.css" rel="stylesheet" /> -->
+        <link href="include/css/style.css" rel="stylesheet" />
     </head>
+
     <body>
-        <!-- 
-=====================================================================================================================
-            HEADER & NAVIGATION SECTION START
-=====================================================================================================================
-        -->
-        <header class="w">
-            <!-- mn main-nav main navigation -->
-            <!-- navbar > main-navbar -->
-            <nav class="main-navbar">
-                <div class="main-navbar-container">
-                    <div>
-                        <a href="index.html" class="main-navbar-logo"
-                            >M.G.N
-                            <!-- <img
-                                src="include/img/logo/mgn-Logo-small-140x124.png"
-                                alt="Logo MGN - Montgomery Guru Nanak Public School Adarsh Nagar Jalandhar"
-                            /> -->
-                        </a>
+        <!-- Navigation navbar -->
+
+        <section class="fixed-navbar">
+            <input type="checkbox" class="checkbox" id="click" hidden />
+
+            <!-- sidebar -->
+            <aside class="fixed-sidebar">
+                <label for="click">
+                    <div class="hamburger-icon">
+                        <div class="line line-1"></div>
+                        <div class="line line-2"></div>
+                        <div class="line line-3"></div>
                     </div>
-                    <button class="main-navbar-toggle">
-                        <span class="bar"></span>
-                        <span class="bar"></span>
-                        <span class="bar"></span>
-                    </button>
-                    <ul class="main-navbar-menu">
-                        <li class="main-navbar-menu-link">
-                            <a href="#">About</a>
-                        </li>
-                        <li class="main-navbar-menu-link">
-                            <a href="include/html/smc.html">SMC</a>
-                        </li>
-                        <li class="main-navbar-menu-link">
-                            <a href="include/html/faculty.html">Faculty</a>
-                        </li>
-                        <li class="main-navbar-menu-link">
-                            <a href="#">Academics</a>
-                        </li>
-                        <li class="main-navbar-menu-link">
-                            <a href="#">Transport</a>
-                        </li>
-                        <li class="main-navbar-menu-link">
-                            <a href="#">Admission</a>
-                        </li>
-                        <li class="main-navbar-menu-link">
-                            <a href="#">Gallery</a>
-                        </li>
-                        <li class="main-navbar-menu-link">
-                            <a href="#">More</a>
-                        </li>
-                        <li class="main-navbar-menu-link">
-                            <a class="nav__a--button" href="#">CONTACT</a>
-                        </li>
-                    </ul>
-                    <!-- Navigation links for Social Icons -->
-                    <!-- <ul class="nav__list">
-                        <li class="nav__link social__icon">Facebook</li>
-                        <li class="nav__link">
-                            <a href="include/html/smc.html">Instagram</a>
-                        </li>
-                        <li class="nav__link">
-                            <a href="include/html/faculty.html">Youtube</a>
-                        </li>
-                    </ul> -->
+                </label>
+                <!-- 
+                <div class="mgn-initials">
+                    <p>M</p>
+                    <p>G</p>
+                    <p>N</p>
+                </div> -->
+
+                <ul class="social-icons-list">
+                    <li>
+                        <a
+                            href="https://www.facebook.com/mgn.adarshnagar.5/"
+                            target="_blank"
+                            class="social-link"
+                            ><i class="ph ph-facebook-logo"></i
+                        ></a>
+                    </li>
+                    <li>
+                        <a
+                            href="https://www.instagram.com/mgn.adarshnagar/?hl=en"
+                            target="_blank"
+                            class="social-link"
+                            ><i class="ph ph-instagram-logo"></i
+                        ></a>
+                    </li>
+                    <li>
+                        <a
+                            href="https://x.com/MGNPublicSchool"
+                            target="_blank"
+                            class="social-link"
+                            ><i class="ph ph-x-logo"></i
+                        ></a>
+                    </li>
+
+                    <li>
+                        <a
+                            href="https://www.youtube.com/@mgnpublicschooladarshnagar6580"
+                            target="_blank"
+                            class="social-link"
+                            ><i class="ph ph-youtube-logo"></i
+                        ></a>
+                    </li>
+                </ul>
+
+                <div class="year">
+                    <p>2025</p>
+                </div>
+            </aside>
+            <!-- END of sidebar -->
+
+            <!-- navigation -->
+
+            <nav class="navigation">
+                <div class="navigation-header">
+                    <h2 class="navigation-heading">MGN Public School</h2>
+
+                    <form action="" class="navigation-search">
+                        <input
+                            type="text"
+                            name=""
+                            id=""
+                            class="navigation-search-input"
+                            placeholder="Search..."
+                        />
+                        <button class="navigation-search-btn">
+                            <i class="ph ph-magnifying-glass"></i>
+                        </button>
+                    </form>
+                </div>
+
+                <ul class="navigation-list">
+                    <li class="navigation-item">
+                        <a href="" class="navigation-link">Home</a>
+                    </li>
+
+                    <li class="navigation-item">
+                        <a href="" class="navigation-link">About Us </a>
+                    </li>
+
+                    <li class="navigation-item">
+                        <a href="" class="navigation-link">Academics</a>
+                    </li>
+
+                    <li class="navigation-item">
+                        <a href="" class="navigation-link">Admission</a>
+                    </li>
+
+                    <li class="navigation-item">
+                        <a href="" class="navigation-link">Infrastructure</a>
+                    </li>
+
+                    <li class="navigation-item">
+                        <a href="" class="navigation-link">Gallery</a>
+                    </li>
+
+                    <li class="navigation-item">
+                        <a href="" class="navigation-link">Other Links</a>
+                    </li>
+
+                    <li class="navigation-item">
+                        <a href="" class="navigation-link">Contact Us</a>
+                    </li>
+                </ul>
+
+                <div class="copyright">
+                    <p>&copy; 2025. MGN Public School</p>
+                    <p>All Rights Reserved</p>
                 </div>
             </nav>
+            <!-- end of navigation -->
+        </section>
+
+        <!-- END of Navigation navbar-->
+
+        <!-- header -->
+        <header class="header">
+            <div class="brand">
+                <div class="brand-img">
+                    <img
+                        src="/include/logo/logo153x136.png"
+                        alt="MGN Logo"
+                        width="120px"
+                    />
+                    <!-- <h3 class="brand-heading">MGN Public School</h3> -->
+                </div>
+
+                <div class="banner">
+                    <h1 class="banner-heading">Welcome to MGN Public School</h1>
+                    <p class="banner-paragraph">Adarsh Nagar, Jalandhar</p>
+                    <!-- <p class="banner-paragraph">AJIT HAI ABHEET HAI</p> -->
+                    <button class="banner-button">New Admission</button>
+                </div>
+            </div>
         </header>
-        <!-- 
-=====================================================================================================================
-            HEADER & NAVIGATION SECTION END
-=====================================================================================================================
-        -->
-        <main class="w">
-            <!-- 
-===============================================================================================================================
-            HERO SECTION START
-===============================================================================================================================
-             -->
-            <section class="hero">
-                <!-- **************************  HERO COLLAGE GRID START *************************** -->
-                <!-- div.hero_collage>div*6>h2{Div $}+p>lorem -->
 
-                <div class="hero_collage gc">
-                    <div class="hero_collage_gi fc">
-                        <div class="logo display-none">
-                            <a href="index.html"
-                                ><img
-                                    src="include/img/logo/mgn-Logo-small-140x124.png"
-                                    alt="Logo MGN - Montgomery Guru Nanak Public School Adarsh Nagar Jalandhar"
-                                    style="border: 1px solid red"
-                            /></a>
-                        </div>
-                        <div>
-                            <h1>
-                                MONTGOMERY GURU NANAK PUBLIC SCHOOL, ADARSH
-                                NAGAR, JALANDHAR
-                            </h1>
+        <!-- end of header -->
 
-                            <h2>
-                                <strong>AN ICONIC BRAND IN EDUCATION</strong>
-                            </h2>
+        <!-- features banner -->
+        <section class="features-banner container-l">
+            <p class="feature-col">51+ Years of Legacy</p>
+            <p class="feature-col feature-col-2">5 Lakh+ Student Nurtured</p>
+            <p class="feature-col feature-col-3">24373 Sq mtr Campus Area</p>
+            <p class="feature-col feature-col-4">145+ Qualified Educators</p>
+            <p class="feature-col">106 Classrooms</p>
+        </section>
+        <!--end of features banner -->
 
-                            <p>
-                                MGN Public School, Adarsh Nagar, Jalandhar is
-                                being run by Montgomery Guru Nanak Educational
-                                Trust which was founded in 1922, at Montgomery
-                                (now in Pakistan)
-                            </p>
-                        </div>
-                    </div>
-                    <div class="hero_collage_gi">
-                        <h2>Div 2</h2>
-                        <h2>Admission - Apply Now</h2>
-                        <p>
-                            Earum animi ullam alias velit asperiores. Optio
-                            dignissimos exercitationem dolore delectus porro
-                            voluptatum eaque est eum nam ipsum ullam
-                            reprehenderit nostrum nemo distinctio, nisi
-                            molestias perspiciatis at? Dolor, rerum ipsam!
-                        </p>
-                    </div>
-                    <div class="hero_collage_gi">
-                        <h2>Div 3</h2>
-                        <h2>PRE-PRIMARY WING</h2>
+        <!-- about us -->
+        <section class="about-us">
+            <div class="about-us-content container-l">
+                <h2 class="about-us-heading">About Us</h2>
+                <div class="underline">
+                    <div class="small-underline"></div>
+                    <div class="big-underline"></div>
+                </div>
+                <h3 class="sub-heading">MGN Public School</h3>
+                <p class="about-us-paragraph">
+                    Montgomery Guru Nanak (MGN) Public School is one of the most
+                    prestigious educational institution. It was established in
+                    the year 1974 by Montgomery Guru Nanak Educational Trust.
+                    <br />
+                    <br />
+                    Education Curriculums :&nbsp; Pre-Primary, &nbsp; Primary,
+                    &nbsp; Sec & Sr. Secondary
+                </p>
 
-                        <p>
-                            We in M.G.N. Pre-Primary recognize this & aim to
-                            mentally stimulate & develop the cognitive skills of
-                            the tiny-tots here.M.G.N. Pre-Primary is located in
-                            a separate block equipped with modern amenities,
-                            large airy, spick & span rooms with colourful
-                            furniture.
-                        </p>
-                    </div>
-                    <div class="hero_collage_gi">
-                        <h2>Div 4</h2>
-                        <h2>PRIMARY WING</h2>
-                        <p>
-                            The second stepping ladder is the Primary Wing
-                            comprising of Classes I to V. Every class is divided
-                            into five sections and the syllabi is based on CBSE.
-                            Lots of activities are inculcated in the
-                            co-curriculum along with the school curriculum.
-                        </p>
-                    </div>
-                    <div class="hero_collage_gi">
-                        <h2>Div 5</h2>
-                        <h2>SR. & SEC. WING</h2>
-                        <p>
-                            Senior & Secondary Wing has VI to XII classes. Under
-                            this wing there are approximately 2000 students and
-                            90 teachers. The wing has two libraries and separate
-                            labs for all subjects. The wing has been divided
-                            into four houses named as Sahibzada Ajit Singh
-                            House.
-                        </p>
-                    </div>
-                    <div class="hero_collage_gi">
-                        <h2>Div 6</h2>
-                        <h2>Notice Board</h2>
-                        <p>
-                            Earum animi ullam alias velit asperiores. Optio
-                            dignissimos exercitationem dolore delectus porro
-                            voluptatum eaque est eum nam ipsum ullam
-                            reprehenderit nostrum nemo distinctio, nisi
-                            molestias perspiciatis at? Dolor, rerum ipsam!
-                        </p>
-                    </div>
-                    <div class="hero_collage_gi">
-                        <h2>Div 7</h2>
-                        <h2>Gallery</h2>
-                        <p>
-                            Earum animi ullam alias velit asperiores. Optio
-                            dignissimos exercitationem dolore delectus porro
-                            voluptatum eaque est eum nam ipsum ullam
-                            reprehenderit nostrum nemo distinctio, nisi
-                            molestias perspiciatis at? Dolor, rerum ipsam!
-                        </p>
-                    </div>
-                    <div class="hero_collage_gi">
-                        <h2>Div 8</h2>
-                        <h2>From Principal's Desk</h2>
-                        <p class="line_clamp">
-                            Change is the law of Nature. The rising sun beckons
-                            us to commence our daily routine. Plans are made,
-                            rendezvous set up. The chartered goal encourages us
-                            to move from the realm of thought to the realm of
-                            action. A life of wisdom must be a life of
-                            contemplation combined with action, as an action is
-                            like a pebble hitting the still waters and ripples
-                            spread over the surface. Even the smallest action
-                            can have a far reaching effect. It can make a big
-                            difference between failure and success. At the
-                            Olympics the difference between triumph and pain is
-                            1 /100 of a second and at the Academic level it
-                            could be a single mark or a half mark.
-                        </p>
-                    </div>
-                    <div class="hero_collage_gi">
-                        <h2>Div 9</h2>
-                        <h2>CBSE Mandatory Disclosure</h2>
-                        <p>
-                            Earum animi ullam alias velit asperiores. Optio
-                            dignissimos exercitationem dolore delectus porro
-                            voluptatum eaque est eum nam ipsum ullam
-                            reprehenderit nostrum nemo distinctio, nisi
-                            molestias perspiciatis at? Dolor, rerum ipsam!
-                        </p>
-                    </div>
-                    <div class="hero_collage_gi">
-                        <h2>Div 10</h2>
-                        <h2>Latest Update of School infrastructure</h2>
+                <button class="read-more">
+                    Read More <i class="ph ph-caret-double-right btn-arrow"></i>
+                </button>
+            </div>
 
-                        <!-- <video width="520" height="340" controls>
-                            <source
-                                src="https://www.youtube.com/watch?v=UaOwdzuuKlE"
-                                type="video/mp4"
-                            />
-                            <source src="movie.ogg" type="video/ogg" />
-                            Your browser does not support the video tag.
-                        </video> -->
-                        <div>
-                            <iframe
-                                width="350"
-                                height="270"
-                                src="https://www.youtube.com/embed/UaOwdzuuKlE"
-                                title="Latest Update of School infrastructure"
-                                frameborder="0"
-                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                                referrerpolicy="strict-origin-when-cross-origin"
-                                allowfullscreen
-                            ></iframe>
-                        </div>
+            <div class="about-us-images">
+                <img
+                    src="include/img/aboutus/img1.jpg"
+                    alt=""
+                    class="image image-1"
+                />
+                <img
+                    src="include/img/aboutus/img2.jpg"
+                    alt=""
+                    class="image image-2"
+                />
+                <img
+                    src="include/img/aboutus/img3.jpg"
+                    alt=""
+                    class="image image-3"
+                />
+                <img
+                    src="include/img/aboutus/img4.jpg"
+                    alt=""
+                    class="image image-4"
+                />
+            </div>
+        </section>
+        <!-- end of about us -->
+
+        <!-- about us -->
+        <section>
+            <div class="principal container-l">
+                <div class="principal-info col col-1">
+                    <div>
+                        <img
+                            src="include/img/principal/principal290x340.jpg"
+                            alt="Kanwaljeet Singh Randhawa"
+                            class="principal-img"
+                        />
                     </div>
+                    <h3 class="principal-name">K S RANDHAWA (Principal)</h3>
+                </div>
+                <div class="principal-desk col col-2">
+                    <h2 class="principal-heading">From Principal's Desk</h2>
+                    <p class="principal-msg">
+                        The world is shrinking and life is becoming fiercely
+                        competitive by every passing hour. A student’s success
+                        in School starts in the head and heart of his or her
+                        Parents and Teachers. The way we adults see them and the
+                        way these little children see themselves, is what they
+                        will actually become. I strongly believe that when one
+                        stops learning, one stop growing and when one stops
+                        growing, one stagnates. Sow an act and you reap a habit.
+                        Sow a habit and you reap a character. Sow a character
+                        and you reap a destiny. MGN stresses on Character
+                        building more than anything else.
+                    </p>
+                    <button class="read-more">
+                        Read More
+                        <i class="ph ph-caret-double-right btn-arrow"></i>
+                    </button>
                 </div>
 
-                <!-- **************************  HERO COLLAGE GRID END *************************** -->
+                <div class="about-us-video col col-3">
+                    <video
+                        controls
+                        autoplay
+                        loop
+                        width="100%"
+                        style="border-radius: 20px"
+                        muted
+                        playsinline
+                    >
+                        <source
+                            src="/include/video/infrastructure720px.mp4"
+                            type="video/mp4"
+                        />
+                    </video>
+                </div>
+            </div>
+        </section>
+        <!-- end of about us -->
 
-                <!-- <figure class="mask-border-top-bottom">
-                    <img
-                        src="include/img/hero-section/all-teachers-crop.jpg"
-                        alt="Group Picture of Faculty and Staff of MGN Public School"
-                    />
+        <!-- Class 10 result -->
+        <section class="section-bgcolor result-class10">
+            <h2 class="result result-heading">
+                Academic Result 10<sup>th</sup> Class
+            </h2>
+            <h3 class="result result-sub-heading">Session: 2024 - 2025</h3>
+            <div class="gc">
+                <div class="gi student-info">
+                    <figure>
+                        <img
+                            src="include/img/result/class10/y24-25/janjot-kaur1.jpg"
+                            alt="Janjot Kaur"
+                            width="165px"
+                            class="student-img"
+                        />
+                        <figcaption>
+                            Janjot Kaur<br />
+                            1<sup>st</sup> Position: 99%
+                        </figcaption>
+                    </figure>
+                </div>
 
-                    <figcaption>MGN Faculty</figcaption>
-                </figure> -->
+                <div class="gi student-info">
+                    <figure>
+                        <img
+                            src="include/img/result/class10/y24-25/ishpreet-kaur2.jpg"
+                            alt="Ishpreet Kaur"
+                            width="165px"
+                            class="student-img"
+                        />
+                        <figcaption>
+                            Ishpreet Kaur<br />
+                            2<sup>nd</sup> Position: 98.4%
+                        </figcaption>
+                    </figure>
+                </div>
 
-                <!-- <div class="slideshow mask-border-top-bottom"></div> -->
+                <div class="gi student-info">
+                    <figure>
+                        <img
+                            src="include/img/result/class10/y24-25/avni-seth3.jpg"
+                            alt="Avni Seth"
+                            width="165px"
+                            class="student-img"
+                        />
+                        <figcaption>
+                            Avni Seth<br />
+                            3<sup>rd</sup> Position: 98%
+                        </figcaption>
+                    </figure>
+                </div>
 
-                <!-- <picture>
-                    <source
-                        media="(min-width:650px)"
-                        srcset="
-                            include/img/hero-section/medium/all-teachers-medium.jpg
-                        "
-                    />
-                    <source
-                        media="(min-width:465px)"
-                        srcset="
-                            include/img/hero-section/small/all-teachers-small.jpg
-                        "
-                    />
-                    <img
-                        src="include/img/hero-section/all-teachers-crop.jpg"
-                        alt="Group Picture of Faculty and Staff of MGN Public School"
-                    />
-                </picture> -->
+                <div class="gi student-info">
+                    <figure>
+                        <img
+                            src="include/img/result/class10/y24-25/harsheen-bhatia3.jpg"
+                            alt="Harsheen Bhatia"
+                            width="165px"
+                            class="student-img"
+                        />
+                        <figcaption>
+                            Harsheen Bhatia<br />
+                            3<sup>rd</sup> Position: 98%
+                        </figcaption>
+                    </figure>
+                </div>
+
+                <div class="gi student-info">
+                    <figure>
+                        <img
+                            src="include/img/result/class10/y24-25/maneet-singh-parmar3.jpg"
+                            alt="Maneet Singh Parmar"
+                            width="165px"
+                            class="student-img"
+                        />
+                        <figcaption>
+                            Maneet Singh Parmar<br />
+                            3<sup>rd</sup> Position: 98%
+                        </figcaption>
+                    </figure>
+                </div>
+
+                <div class="gi student-info">
+                    <figure>
+                        <img
+                            src="include/img/result/class10/y24-25/adiraj-manajktala4.jpg"
+                            alt="Adiraj Manajktala"
+                            width="165px"
+                            class="student-img"
+                        />
+                        <figcaption>
+                            Adiraj Manajktala<br />
+                            4<sup>th</sup> Position: 97.8%
+                        </figcaption>
+                    </figure>
+                </div>
+
+                <div class="gi student-info">
+                    <figure>
+                        <img
+                            src="include/img/result/class10/y24-25/gurjapan-singh4.jpg"
+                            alt="Gurjapan Singh"
+                            width="165px"
+                            class="student-img"
+                        />
+                        <figcaption>
+                            Gurjapan Singh<br />
+                            4<sup>th</sup> Position: 97.8%
+                        </figcaption>
+                    </figure>
+                </div>
+
+                <div class="gi student-info">
+                    <figure>
+                        <img
+                            src="include/img/result/class10/y24-25/sukhmandeep-kaur4.jpg"
+                            alt="Sukhmandeep Kaur"
+                            width="165px"
+                            class="student-img"
+                        />
+                        <figcaption>
+                            Sukhmandeep Kaur<br />
+                            4<sup>th</sup> Position: 97.8%
+                        </figcaption>
+                    </figure>
+                </div>
+
+                <div class="gi student-info">
+                    <figure>
+                        <img
+                            src="include/img/result/class10/y24-25/mannat-kaur5.jpg"
+                            alt="Mannat Kaur"
+                            width="165px"
+                            class="student-img"
+                        />
+                        <figcaption>
+                            Mannat Kaur<br />
+                            5<sup>th</sup> Position: 97.6%
+                        </figcaption>
+                    </figure>
+                </div>
+            </div>
+        </section>
+        <!-- end of  Class 10 result -->
+
+        <!-- Class 12 result COMMERCE -->
+
+        <section class="result-class12">
+            <h2 class="result result-heading">
+                Academic Result 12<sup>th</sup> Class COMMERE
+            </h2>
+            <h3 class="result result-sub-heading">Session: 2024 - 2025</h3>
+            <div class="gc">
+                <div class="gi student-info">
+                    <figure>
+                        <img
+                            src="include/img/result/class12/y2024-25/commerce/prerna-arora1.jpg"
+                            alt="Prerna Arora"
+                            width="165px"
+                            class="student-img"
+                        />
+                        <figcaption>
+                            Prerna Arora<br />
+                            1<sup>st</sup> Position: 97.4%
+                        </figcaption>
+                    </figure>
+                </div>
+
+                <div class="gi student-info">
+                    <figure>
+                        <img
+                            src="include/img/result/class12/y2024-25/commerce/jaanya-wadhwa2.jpg"
+                            alt="Position 2"
+                            width="165px"
+                            class="student-img"
+                        />
+                        <figcaption>
+                            Jannya Wadhwa<br />
+                            2<sup>nd</sup> Position: 96.4%
+                        </figcaption>
+                    </figure>
+                </div>
+
+                <div class="gi student-info">
+                    <figure>
+                        <img
+                            src="include/img/result/class12/y2024-25/commerce/vasudha-ahuja3.jpg"
+                            alt="Position 3"
+                            width="165px"
+                            class="student-img"
+                        />
+                        <figcaption>
+                            Vasudha Ahuja<br />
+                            3<sup>rd</sup> Position: 95.8%
+                        </figcaption>
+                    </figure>
+                </div>
+            </div>
+        </section>
+        <!--End of  Class 12 result COMMERCE -->
+
+        <!-- Class 12 result Non Medical -->
+
+        <section class="section-bgcolor result-class12">
+            <h2 class="result result-heading">
+                Academic Result 12<sup>th</sup> Class NON-MEDICAL
+            </h2>
+            <h3 class="result result-sub-heading">Session: 2024 - 2025</h3>
+            <div class="gc">
+                <div class="gi student-info">
+                    <figure>
+                        <img
+                            src="include/img/result/class12/y2024-25/nonmedical/ananyagupta1.jpg"
+                            alt="Position 1"
+                            width="165px"
+                            class="student-img"
+                        />
+                        <figcaption>
+                            Ananya Gupta<br />
+                            1<sup>st</sup> Position: 97%
+                        </figcaption>
+                    </figure>
+                </div>
+
+                <div class="gi student-info">
+                    <figure>
+                        <img
+                            src="include/img/result/class12/y2024-25/nonmedical/snimerjot-singh2.jpg"
+                            alt="Position 2"
+                            width="165px"
+                            class="student-img"
+                        />
+                        <figcaption>
+                            Snimerjot Singh<br />
+                            2<sup>nd</sup> Position: 96.2%
+                        </figcaption>
+                    </figure>
+                </div>
+
+                <div class="gi student-info">
+                    <figure>
+                        <img
+                            src="include/img/result/class12/y2024-25/nonmedical/dilnoor-singh3.jpg"
+                            alt="Position 3"
+                            width="165px"
+                            class="student-img"
+                        />
+                        <figcaption>
+                            Dilnoor Singh<br />
+                            3<sup>rd</sup> Position: 95%
+                        </figcaption>
+                    </figure>
+                </div>
+            </div>
+        </section>
+        <!-- End of Class 12 result Non Medical -->
+
+        <!-- Class 12 result  Medical -->
+
+        <section class="result-class12">
+            <h2 class="result result-heading">
+                Academic Result 12<sup>th</sup> Class MEDICAL
+            </h2>
+            <h3 class="result result-sub-heading">Session: 2024 - 2025</h3>
+            <div class="gc">
+                <div class="gi student-info">
+                    <figure>
+                        <img
+                            src="include/img/result/class12/y2024-25/medical/harmandeepsingh1.jpg"
+                            alt="Position 1"
+                            width="165px"
+                            class="student-img"
+                        />
+                        <figcaption>
+                            Harmandeep Singh<br />
+                            1<sup>st</sup> Position: 96.8%
+                        </figcaption>
+                    </figure>
+                </div>
+
+                <div class="gi student-info">
+                    <figure>
+                        <img
+                            src="include/img/result/class12/y2024-25/medical/sanya-dhamija2.jpg"
+                            alt="Position 2"
+                            width="165px"
+                            class="student-img"
+                        />
+                        <figcaption>
+                            Sanya Dhamija<br />
+                            2<sup>nd</sup> Position: 96%
+                        </figcaption>
+                    </figure>
+                </div>
+
+                <div class="gi student-info">
+                    <figure>
+                        <img
+                            src="include/img/result/class12/y2024-25/medical/sakshi-kohli3.jpg"
+                            alt="Position 3"
+                            width="165px"
+                            class="student-img"
+                        />
+                        <figcaption>
+                            Sakshi Kohli<br />
+                            3<sup>rd</sup> Position: 94%
+                        </figcaption>
+                    </figure>
+                </div>
+            </div>
+        </section>
+
+        <!-- end of  Class 12 result  Medical -->
+
+        <!-- <section class="result-jee-main">
+            <h2 class="result-heading">JEE MAINS 2025</h2>
+      
+            <div class="gc">
+                <div class="gi student-info">
+                    <figure>
+                        <img
+                            src="include/img/result/class10/y24-25/janjot-kaur1.jpg"
+                            alt="Janjot Kaur"
+                            width="165px"
+                            class="student-img"
+                        />
+                        <figcaption>
+                            Janjot Kaur<br />
+                            1<sup>st</sup> Position: 99%
+                        </figcaption>
+                    </figure>
+                </div>
+            </div>
+        </section> -->
+
+        <!------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------  -->
+
+        <main>
+            <section class="infrastructure main-grid four-col">
+                <h2 class="section-title">Infrastructure</h2>
+                <img src="" alt="" /><img src="" alt="" /><img
+                    src=""
+                    alt=""
+                /><img src="" alt="" />
             </section>
 
-            <!-- 
-===============================================================================================================================
-            HERO SECTION END
-===============================================================================================================================
-             -->
-            <section class="facilities gc">
-                <article class="">
-                    <h2>Pre-Primary Wing</h2>
-                    <p>
-                        We in M.G.N. Pre-Primary recognize this & aim to
-                        mentally stimulate & develop the cognitive skills of the
-                        tiny-tots here.M.G.N. Pre-Primary is located in a
-                        separate block equipped with modern amenities, large
-                        airy, spick & span rooms with colourful furniture.
-                    </p>
-                </article>
-                <article class="">
-                    <h2>Primary Wing</h2>
-                    <p>
-                        The second stepping ladder is the Primary Wing
-                        comprising of Classes I to V. Every class is divided
-                        into five sections and the syllabi is based on CBSE.
-                        Lots of activities are inculcated in the co-curriculum
-                        along with the school curriculum.
-                    </p>
-                </article>
-                <article class="">
-                    <h2>Sr. & Sec. Wing</h2>
-                    <p>
-                        Senior & Secondary Wing has VI to XII classes. Under
-                        this wing there are approximately 2000 students and 90
-                        teachers. The wing has two libraries and separate labs
-                        for all subjects. The wing has been divided into four
-                        houses named as Sahibzada Ajit Singh House..
-                    </p>
-                </article>
+            <section class="gallery-slideshow main-grid four-col">
+                <h2 class="section-title">Gallery</h2>
+                <img src="" alt="" /><img src="" alt="" /><img
+                    src=""
+                    alt=""
+                /><img src="" alt="" />
             </section>
 
-            <!-- 
-===============================================================================================================================
-            GRID START      Learn CSS Grid the easy way     https://www.youtube.com/watch?v=rg7Fvvl3taU  
-===============================================================================================================================
-             -->
-            <section class="infrastructure">
-                <h2>Why M.G.N</h2>
-                <div class="infragc gc">
-                    <article class="infragi grid-col-span-2">
-                        Grid Items 1
-                    </article>
-                    <article class="infragi">Grid Items 2</article>
-                    <article class="infragi">Grid Items 3</article>
-                    <article class="infragi grid-col-span-2">
-                        Grid Items 4
-                    </article>
-                    <article class="infragi">Grid Items 5</article>
-                </div>
+            <section class="alumni main-grid four-col">
+                <h2 class="section-title">Alumni</h2>
             </section>
 
-            <!-- 
-===============================================================================================================================
-            GRID END      Learn CSS Grid the easy way     https://www.youtube.com/watch?v=rg7Fvvl3taU  
-===============================================================================================================================
-             -->
-            <!-- 
-===============================================================================================================================
-            BENTO GRID START
-===============================================================================================================================
-             -->
-            <section class="bento-grid">
-                <div>
-                    <h1><span>Nursery</span> of Future Citizens</h1>
-                    <img
-                        src="/assets/images/illustration-five-stars.webp"
-                        alt=""
-                    />
-                    <p>Over 4,000 5-star reviews</p>
-                </div>
-
-                <div>
-                    <h2>Manage multiple accounts and platforms.</h2>
-                    <img
-                        src="/assets/images/illustration-multiple-platforms.webp"
-                        alt=""
-                    />
-                </div>
-
-                <div>
-                    <h2>Maintain a consistent posting schedule.</h2>
-                    <img
-                        src="/assets/images/illustration-consistent-schedule.webp"
-                        alt=""
-                    />
-                </div>
-
-                <div>
-                    <h2>Schedule to social media.</h2>
-                    <img
-                        src="assets/images/illustration-schedule-posts.webp"
-                        alt=""
-                    />
-                    <p>
-                        Optimize post timings to publish content at the perfect
-                        time for your audience.
-                    </p>
-                </div>
-
-                <div>
-                    <h2>Grow followers with non-stop content.</h2>
-                    <img
-                        src="assets/images/illustration-grow-followers.webp"
-                        alt=""
-                    />
-                </div>
-
-                <div>
-                    <h2>>56% <span>faster audience growth</span></h2>
-                    <img
-                        src="assets/images/illustration-audience-growth.webp"
-                        alt=""
-                    />
-                </div>
-
-                <div>
-                    <h2>Create and schedule content <span>quicker.</span></h2>
-                    <img
-                        src="assets/images/illustration-create-post.webp"
-                        alt=""
-                    />
-                </div>
-
-                <div>
-                    <h2>Write your content using AI.</h2>
-                    <img
-                        src="assets/images/illustration-ai-content.webp"
-                        alt=""
-                    />
-                </div>
+            <section class="stories-slideshow main-grid four-col">
+                <h2 class="section-title">Student Sucess Stories</h2>
             </section>
-            <!-- 
-===============================================================================================================================
-            BENTO GRID END
-===============================================================================================================================
-             -->
         </main>
-        <!-- 
-===============================================================================================================================
-            FOOTER START
-===============================================================================================================================
-             -->
-        <footer class="w">
-            <h1>FOOTER</h1>
-            <p>
-                Lorem ipsum, dolor sit amet consectetur adipisicing elit. At
-                iure culpa ipsam neque accusantium consectetur a soluta
-                recusandae alias! Repellendus, quaerat qui! Corporis, est.
-                Dolorum minima nemo non deserunt, itaque placeat nam hic
-                facilis. Commodi, temporibus, explicabo inventore ipsa ad natus
-                distinctio ut officiis, magnam repellat ullam placeat quibusdam
-                quisquam.
-            </p>
+
+        <footer class="main-grid two-col">
+            <div class="footer-main">
+                <img src="img/logo.png" alt="" class="footer-logo" />
+                <p class="footer-text"></p>
+                <p class="footer-fineprint"></p>
+            </div>
+            <ul class="social-list">
+                <li class="social-item">
+                    <a href="#" class="social-link"></a>
+                </li>
+                <li class="social-item">
+                    <a href="#" class="social-link"></a>
+                </li>
+                <li class="social-item">
+                    <a href="#" class="social-link"></a>
+                </li>
+            </ul>
         </footer>
-        <!-- 
-===============================================================================================================================
-            FOOTER END
-===============================================================================================================================
-             -->
     </body>
-    <script src="script.js"></script>
 </html>

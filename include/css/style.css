@@ -1,0 +1,670 @@
+/* common styles */
+
+:root {
+    /* font family */
+    --ff-body: "Montserrat", sans-serif;
+    --ff-second: "Josefin Slab", serif;
+
+    /* color */
+    --clr-white: #fff;
+    --clr-white-dark: #eee;
+    --clr-grey-light: #ddd;
+    --clr-grey-dark: #777;
+    --clr-grey-xdark: #555;
+    --clr-black-light: #333;
+    --clr-black: #222;
+    --clr-orange-light: #deaa86;
+
+    --grid-min-col-size: 150px;
+    --fc-gc-gap: 2rem;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+html {
+    /* default font size is 16px but we want to set it as 10px
+      so 10/16 = 0.625 * 100 = 62.5%
+       */
+    font-size: 62.5%;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: var(--ff-body);
+    position: relative;
+}
+
+.container-l {
+    max-width: 90%;
+}
+
+/* End of Common Styles */
+
+/* navbar  */
+/* sidebar */
+
+.fixed-sidebar {
+    width: 8rem;
+    height: 100dvh; /* 100% */
+    background-color: var(--clr-white-dark);
+    position: fixed;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 100;
+}
+
+.hamburger-icon {
+    margin-top: 3rem;
+    cursor: pointer;
+}
+
+.line {
+    height: 0.2rem;
+    width: 2.5rem;
+    background-color: var(--clr-black);
+    margin-block-end: 0.6rem;
+}
+
+.line-1,
+.line-3 {
+    width: 1.8rem;
+    /* transition: width 0.3s; */
+    transition: all 0.4s;
+}
+
+.hamburger-icon:hover .line {
+    width: 2.5rem;
+}
+
+.mgn-initials {
+    /* font-family: var(--ff-second); */
+    font-size: 2rem;
+    font-weight: 400;
+    color: var(--clr-grey-xdark);
+}
+
+.social-icons-list {
+    list-style: none;
+    padding: 0;
+    height: 15rem; /* 25rem */
+    display: flex;
+    flex-direction: column;
+    row-gap: 1.5em;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.social-link {
+    font-size: 2.5rem;
+    color: var(--clr-grey-dark);
+    transition: all 0.3s;
+    text-decoration: none;
+}
+
+.social-link:hover,
+.social-link:focus {
+    color: var(--clr-orange-light);
+    font-size: 2.7rem;
+}
+
+.year {
+    margin-block-end: 1rem;
+    font-size: 1.5rem;
+    color: var(--clr-grey-xdark);
+}
+
+/* end of sidebar */
+
+/* navigation */
+.navigation {
+    position: fixed;
+    /* margin-left: 8rem; */
+    left: -27rem; /* (width of navigation) 35 - 8 (width of fixed sidebar) = 27rem */
+    width: 35rem;
+    height: 100dvh; /* 100% */
+    background: linear-gradient(
+            to top,
+            rgba(34, 32, 41, 1),
+            rgba(34, 32, 41, 0.8)
+        ),
+        url(/include/logo/logo-300x267.png) center no-repeat;
+    /* background-size: cover; */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    transition: left 1s;
+    /* transition: left 1s cubic-bezier(1, 0, 0, 1); */
+    z-index: 99;
+}
+
+.navigation-heading {
+    font-family: var(--ff-second);
+    font-size: 3rem;
+    font-weight: 300;
+    letter-spacing: 0.2rem;
+    color: var(--clr-orange-light);
+    text-align: center;
+}
+
+.navigation-search {
+    position: relative;
+}
+
+.navigation-search-input {
+    width: 25rem;
+    padding: 1rem 2rem;
+    background-color: rgba(0, 0, 0, 0.3);
+    font-family: var(--ff-second);
+    font-size: 1.6rem;
+    color: var(--clr-orange-light);
+    letter-spacing: 0.1rem;
+    outline: none;
+    border: 0.1rem solid var(--clr-grey-xdark);
+    border-radius: 10rem;
+    transition: background-color 0.3s;
+}
+
+.navigation-search-input:focus {
+    background-color: rgba(0, 0, 0, 0.1);
+}
+
+.navigation-search-btn {
+    border: none;
+    background-color: transparent;
+    color: var(--clr-orange-light);
+    font-size: 1.7rem;
+    position: absolute;
+    top: 1rem;
+    right: 3rem;
+    cursor: pointer;
+}
+
+.navigation-search-btn:focus {
+    outline: none;
+}
+
+.navigation-list {
+    list-style: none;
+    padding: 0;
+    height: 35rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.navigation-item {
+    position: relative;
+}
+
+.navigation-link {
+    text-decoration: none;
+    color: var(--clr-white);
+    font-size: 1.6rem;
+    font-weight: 400;
+    letter-spacing: 0.1rem;
+    text-transform: uppercase;
+    transition: color 0.5s;
+}
+
+.navigation-link::before {
+    content: "";
+    width: 0rem;
+    height: 0.1rem;
+    background-color: var(--clr-orange-light);
+    position: absolute;
+    top: 1rem;
+    left: -4rem;
+    transition: width 0.5s cubic-bezier(1, 0, 0, 1);
+}
+
+.navigation-link::after {
+    content: "";
+    width: 0rem;
+    height: 0.1rem;
+    background-color: var(--clr-orange-light);
+    position: absolute;
+    top: 1rem;
+    right: -4rem;
+    transition: width 0.5s cubic-bezier(1, 0, 0, 1);
+}
+
+.navigation-link:hover {
+    color: var(--clr-orange-light);
+}
+
+.navigation-link:hover::before,
+.navigation-link:hover::after {
+    width: 3rem;
+}
+
+.copyright {
+    color: var(--clr-white);
+    font-size: 1.5rem;
+    margin-block-end: 1.5rem;
+    text-align: center;
+}
+
+.checkbox:checked ~ .navigation {
+    left: 8rem;
+}
+
+.checkbox:checked ~ .fixed-sidebar .line-1 {
+    transform: rotate(-405deg) translate(-5px, 6px);
+    width: 2.5rem;
+}
+
+.checkbox:checked ~ .fixed-sidebar .line-2 {
+    opacity: 0;
+}
+
+.checkbox:checked ~ .fixed-sidebar .line-3 {
+    transform: rotate(405deg) translate(-5px, -6px);
+    width: 2.5rem;
+}
+/* end of navigation */
+/* end of navbar */
+
+/* header */
+
+.header {
+    margin-inline-start: 8rem;
+    height: 100dvh;
+    background: linear-gradient(to top, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.5)),
+        url(/include/img/banner/student-in-assembly3.jpg) center no-repeat;
+    background-size: cover;
+    /* background-position: bottom; */
+}
+
+.brand {
+    display: flex;
+    flex-direction: column;
+    /* cursor: pointer; */
+}
+
+.brand-img {
+    margin-block-start: 1em;
+    margin-inline-end: 1em;
+    align-self: flex-end;
+}
+
+/* .brand-heading {
+    font-family: var(--ff-second);
+    font-size: 2.7rem;
+    font-weight: 400;
+    color: var(--clr-orange-light);
+    letter-spacing: 0.2rem;
+} */
+
+.banner {
+    color: var(--clr-grey-light);
+    height: 60rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.banner-heading {
+    font-family: var(--ff-second);
+    font-size: 7rem;
+    font-weight: 400;
+    margin-block-end: 0;
+    animation: banner-animation 2s;
+}
+
+.banner-paragraph {
+    font-size: 3.5rem;
+    font-weight: 300;
+    animation: banner-animation 1.5s 0.5s backwards;
+}
+
+.banner-button {
+    width: 21rem;
+    padding: 1.2rem 2rem;
+    font-size: 2rem;
+    color: var(--clr-black-light);
+    letter-spacing: 0.1rem;
+    border: none;
+    border-radius: 10rem;
+    outline: none;
+    background: linear-gradient(to right, gold, goldenrod);
+    animation: banner-animation 1s 1s backwards;
+}
+
+.banner-button:hover {
+    background: linear-gradient(to left, gold, goldenrod);
+    cursor: pointer;
+}
+
+.banner-button:active {
+    transform: translateY(0.2rem);
+}
+
+@keyframes banner-animation {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+.features-banner {
+    position: absolute;
+    /* top: 800px; */
+    top: 87dvh;
+    /* left: 150px; */
+    left: 8dvw;
+
+    display: flex;
+    justify-content: space-around;
+    background: linear-gradient(to top, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.4));
+    margin-inline: auto;
+    width: calc(90% - 40px);
+
+    font-family: var(--ff-second);
+    font-size: 2.5rem;
+    font-weight: 400;
+    color: #fff;
+
+    line-height: 1.2;
+    letter-spacing: 0.1rem;
+    border-radius: 2rem;
+
+    animation: banner-animation 1s 1s backwards;
+}
+
+.feature-col {
+    padding-inline: 2rem;
+}
+
+.feature-col + .feature-col {
+    border-left: 2px solid var(--clr-orange-light);
+}
+
+.feature-col:nth-child(5) {
+    padding-right: 4rem;
+}
+
+/* end of header */
+
+/* about Us */
+.about-us {
+    margin-inline-start: 8rem;
+    display: flex;
+    background-color: #fbf4ef;
+}
+
+.about-us-content {
+    flex: 0 1 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 10rem;
+}
+
+.about-us-heading {
+    font-family: var(--ff-second);
+    font-size: 4rem;
+    font-weight: 300;
+    text-transform: uppercase;
+    color: var(--clr-grey-xdark);
+    margin-block-end: 1rem;
+}
+
+.small-underline {
+    width: 9rem;
+    height: 0.1rem;
+    margin: 0 auto 1rem auto;
+    background-color: var(--clr-orange-light);
+}
+
+.big-underline {
+    width: 20rem;
+    height: 0.1rem;
+    background-color: var(--clr-orange-light);
+}
+
+.sub-heading,
+.principal-heading {
+    font-size: 3.5rem;
+    font-weight: 400;
+    letter-spacing: 0.2rem;
+    color: var(--clr-orange-light);
+}
+
+.about-us-paragraph,
+.principal-msg {
+    font-size: 1.6rem;
+    font-style: italic;
+    font-weight: 400;
+    text-align: center;
+    margin-block-end: 5rem;
+    line-height: 1.6;
+}
+
+.read-more {
+    width: 15rem;
+    padding: 0.7rem 0.5rem;
+    font-family: var(--ff-body);
+    font-size: 1.2rem;
+    text-transform: uppercase;
+    color: var(--clr-orange-light);
+    background-color: transparent;
+    border: 0.1rem solid var(--clr-orange-light);
+    outline: none;
+    cursor: pointer;
+}
+
+.btn-arrow {
+    margin-left: 0.5rem;
+    transition: margin-left 0.4s;
+}
+
+.read-more:hover .btn-arrow {
+    margin-left: 1.5rem;
+}
+
+.about-us-images {
+    flex: 1 1;
+    position: relative;
+}
+
+.image {
+    width: 32rem;
+    position: absolute;
+    /* absolute position default positioning */
+    top: 0;
+    left: 0;
+    /* now we position or move the image as per top left corner of image */
+    top: 50%;
+    left: 50%;
+    box-shadow: 0 3rem 6rem rgba(0, 0, 0, 0.4);
+    border-radius: 0.4rem;
+    border: 0.2rem solid var(--clr-orange-light);
+    z-index: 0;
+}
+
+.image-1 {
+    transform: translate(-10%, -90%);
+}
+
+.image-2 {
+    transform: translate(-70%, -70%);
+}
+
+.image-3 {
+    transform: translate(-45%, -40%);
+}
+
+.image-4 {
+    transform: translate(-20%, -10%);
+}
+
+.image-3:hover,
+.image-2:hover,
+.image-1:hover {
+    z-index: 1;
+    cursor: pointer;
+}
+
+/* principal message and video section*/
+
+.principal {
+    margin-inline-start: 8rem;
+    margin-block: 8rem;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    text-align: center;
+    column-gap: 2rem;
+}
+
+.col-2 {
+    max-width: 30%;
+}
+
+.principal-img {
+    box-shadow: 0.5rem 1rem 2rem rgba(0, 0, 0, 0.4);
+    border-radius: 2rem 6rem 2rem 6rem;
+    width: 100%;
+}
+
+.principal-name {
+    margin-block-start: 3rem;
+    text-align: center;
+    font-size: 1.5rem;
+    font-family: var(--ff-second);
+    letter-spacing: 0.1rem;
+    color: var(--clr-black);
+}
+
+.principal-heading {
+    text-align: center;
+    margin-block-start: 0;
+}
+
+/* video  */
+
+.about-us-video {
+    max-width: 500px;
+    width: 100%;
+}
+
+video {
+    object-fit: contain;
+    overflow-clip-margin: content-box;
+    overflow: clip;
+}
+/* end of video */
+/* end of principal message and video section*/
+
+/* result class 10  */
+
+.section-bgcolor {
+    background-color: #fbf4ef;
+}
+
+.result-class10,
+.result-class12 {
+    margin-inline-start: 8rem;
+    padding-block: 4rem;
+    padding-inline: 3rem;
+}
+
+.result {
+    font-weight: 400;
+    letter-spacing: 0.2rem;
+    color: var(--clr-orange-light);
+    text-align: center;
+}
+
+.result-heading {
+    font-size: 3.5rem;
+}
+
+.result-sub-heading {
+    font-size: 2.5rem;
+}
+
+.gc {
+    display: grid;
+
+    /* Breakpoint-Free CSS Grid Layouts  https://www.youtube.com/watch?v=bj0Z_GncIwY   */
+    /* Always start with auto-fit is 95% correct then as per situation change to auto-fill */
+    /*  grid-template-columns: repeat(auto-fit, 1fr) would make one column and take entire available width*/
+    /* auto-fill fills empty columns  */
+    /* auto-fit fits occupies the empty space and enlarge grid items to fit */
+    grid-template-columns: repeat(
+        auto-fit,
+        minmax(min(var(--grid-min-col-size), 100%), 1fr)
+    );
+
+    justify-content: center;
+    align-items: start;
+    gap: var(--fc-gc-gap);
+    place-content: center;
+}
+
+.gi {
+    justify-items: center;
+    align-content: start;
+}
+
+.student-info {
+    font-family: var(--ff-second);
+    font-size: 1.8rem;
+    font-weight: 500;
+
+    letter-spacing: 0.1rem;
+    letter-spacing: 1.6;
+
+    cursor: pointer;
+    text-align: center;
+    /* border: 1px solid red; */
+}
+
+/*.faculty-person img {      */
+/* Image dimension 250px x 320px  Size 35.5kb */
+
+/* https://css-tricks.com/almanac/properties/c/clip-path/ */
+/* https://bennettfeely.com/clippy/ */
+/* clip-path: ellipse(width height at Move left Move down);  clip-path: circle(50%);    clip-path: circle(30px at 35px 35px); clip-path: circle(50% at 50% 50%);*/
+/* clip-path: ellipse(50% 50% at 50% 50%); */
+/*  }     */
+
+.student-img {
+    border-radius: 20px 50px 20px 50px;
+    margin-inline: auto;
+    /* outline: 2px solid #333;
+    outline-offset: -1px; */
+}
+
+.student-img:hover,
+.student-img:focus {
+    /* box-shadow: 0 0 2px 1px rgba(0, 140, 186, 0.5); */
+
+    /* Change the color of all images to black and white (100% gray): */
+    -webkit-filter: grayscale(100%); /* Safari 6.0 - 9.0 */
+    filter: grayscale(100%);
+}
+
+/* check this link for how to put figcaption on top of image
+ https://www.w3.org/Style/Examples/007/figures.en.html */
+
+figcaption {
+    padding-block-start: 0.8rem;
+}
+
+/*end of result class 10  */

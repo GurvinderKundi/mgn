@@ -1,51 +1,75 @@
+/*
+Theme Name: MGN Public School Adarsh Nagar
+Theme URI: 
+Description: Reset Stylesheet
+Version: 1.0
+Author: Gurvinder Pal Singh
+Author URI: 
+*/
+
+@charset "UTF-8";
+
 /* ------------------- */
 /* Reset               */
 /* ------------------- */
 
-/* https://piccalil.li/blog/a-modern-css-reset/ */
+/*    https://piccalil.li/blog/a-modern-css-reset/
+      https://www.joshwcomeau.com/css/custom-css-reset/ 
+      https://meyerweb.com/eric/tools/css/reset/
+ */
 
-/* Box sizing rules used by Kevin Powell */
+/* Use a more-intuitive box-sizing model used by Kevin Powell */
 
 *,
 *::before,
 *::after {
+    -webkit-box-sizing: border-box;
     box-sizing: border-box;
-}
-
-/* Prevent font size inflation suggested by Andy Bell. Some browsers increase the size of fonts on smaller screen automatically */
-html {
-    -moz-text-size-adjust: none;
-    -webkit-text-size-adjust: none;
-    text-size-adjust: none;
 }
 
 /* Remove default margin in favour of better control in authored CSS used by Kevin Powell */
 
-body,
-h1,
-h2,
-h3,
-h4,
-h5,
-p,
-figure,
-picture,
-blockquote,
-dl,
-dd {
+* {
     margin: 0;
+}
+
+/* Prevent font size inflation suggested by Andy Bell. Some browsers increase the size of fonts on smaller screen automatically */
+
+html {
+    -moz-text-size-adjust: none;
+    -webkit-text-size-adjust: none;
+    text-size-adjust: none;
+    scroll-behavior: smooth;
+}
+
+/* Set core body defaults used by Kevin Powell */
+body {
+    /* min-height: 100vh; */
+    line-height: 1.6; /* Default Line Height is 1.4 set by browsers */
+    text-rendering: optimizeSpeed;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+/* HTML5 display-role reset for older browsers  https://meyerweb.com/eric/tools/css/reset/ */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+    display: block;
 }
 
 /* Remove list styles on ul, ol elements with a list role, which suggests default styling will be removed */
 ul[role="list"],
 ol[role="list"] {
     list-style: none;
-}
-
-/* Set core body defaults used by Kevin Powell */
-body {
-    min-height: 100vh;
-    line-height: 1.5; /* Default Line Height is 1.4 set by browsers */
 }
 
 /* Set shorter line heights on headings and interactive elements */
@@ -59,18 +83,43 @@ label {
     line-height: 1.1;
 }
 
+/* Avoid text overflows  */
+
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    overflow-wrap: break-word;
+}
+
+/* Improve line wrapping */
+p {
+    text-wrap: pretty;
+}
+
 /* Balance text wrapping on headings */
 h1,
 h2,
 h3,
-h4 {
+h4,
+h5,
+h6 {
     text-wrap: balance;
 }
 
-/* Make images easier to work with used by Kevin Powell */
-/* img,
-picture {
-    max-inline-size: 100%;
+/* Anchor elements that don't have a class get default styles */
+a:not([class]) {
+    text-decoration-skip-ink: auto;
+    color: currentColor;
+}
+
+/* Make images easier to work with provided by Andy BEll*/
+
+/* img, picture, video, canvas, svg {
+    max-width: 100%;
     display: block;
 } */
 
@@ -95,9 +144,9 @@ input,
 button,
 textarea,
 select {
-    font: inherit;
-    /* font-family: inherit;
-    font-size: inherit; */
+    /* font: inherit; */
+    font-family: inherit;
+    font-size: inherit;
 }
 
 /* Make sure textareas without a rows attribute are not tiny */
@@ -105,15 +154,117 @@ textarea:not([rows]) {
     min-height: 10em;
 }
 
+/* Anything that has been anchored to should have extra scroll margin ANDY BELL*/
+:target {
+    scroll-margin-block: 5ex;
+}
+
 /* remove animations for people who've turned them off used by Kevin Powell*/
 
 @media (prefers-reduced-motion: reduce) {
+    html {
+        scroll-behavior: auto;
+    }
     *,
-    *::before,
-    *::after {
+    :after,
+    :before {
+        -webkit-animation-duration: 0.01ms !important;
         animation-duration: 0.01ms !important;
+        -webkit-animation-iteration-count: 1 !important;
         animation-iteration-count: 1 !important;
-        transition-duration: 0.01ms !important;
         scroll-behavior: auto !important;
+        -webkit-transition-duration: 0.01ms !important;
+        transition-duration: 0.01ms !important;
     }
 }
+
+/* https://meyerweb.com/eric/tools/css/reset/ */
+
+/* html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+} */
