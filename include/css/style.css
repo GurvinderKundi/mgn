@@ -598,6 +598,23 @@ video {
     font-size: 2.5rem;
 }
 
+.trophy {
+    color: orangered;
+    font-size: 1.7rem;
+}
+
+.student-info {
+    position: relative;
+}
+
+.svg-award {
+    position: absolute;
+    z-index: 1;
+    width: 8rem;
+    top: 17.5rem;
+    right: 0.1rem;
+}
+
 .gc {
     display: grid;
 
@@ -645,10 +662,21 @@ video {
 /*  }     */
 
 .student-img {
+    max-width: 165px;
     border-radius: 20px 50px 20px 50px;
     margin-inline: auto;
     /* outline: 2px solid #333;
     outline-offset: -1px; */
+    border-radius: 50%;
+
+    box-shadow: 0.5rem 1rem 2rem rgba(0, 0, 0, 0.4);
+
+    /* clip-path: circle(40%);
+    shape-outside: circle(45%); */
+
+    /* border: 2px solid var(--clr-orange-light); */
+    /* outline: 2px solid var(--clr-orange-light);
+    outline-offset: 4px; */
 }
 
 .student-img:hover,
